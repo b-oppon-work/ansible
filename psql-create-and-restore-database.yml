@@ -1,0 +1,12 @@
+---
+- hosts: all 
+  become_user: ansible
+  tasks:
+   - postgresql_db:
+      name: wolf1
+      login_user: ansible
+      state: restore
+
+
+#did not work.... investigate further as yo how to restopre database with ansible.
+...
